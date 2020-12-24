@@ -1,0 +1,36 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+#ily <3
+
+# Global properties
+separator=true
+separator_block_width=15
+
+[cpu_usage]
+command=/home/samo/.config/i3/i3blocks_widgets/cpu_usage
+interval=10
+LABEL=cpu  
+#min_width=CPU: 100.00%
+#T_WARN=50
+#T_CRIT=80
+#DECIMALS=2
+
+[disk]
+command=/home/samo/.config/i3/i3blocks_widgets/disk
+LABEL=disk  
+#DIR=/mnt/data
+interval=30
+
+[memory]
+command=/home/samo/.config/i3/i3blocks_widgets/memory
+label=ram  
+interval=10
+
+[time]
+command=date '+%Y-%m-%d %H:%M:%S '
+interval=1
