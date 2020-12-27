@@ -103,7 +103,17 @@ default_border none
 bindsym Print exec xfce4-screenshooter
 
 #i3lock
-bindsym $mod+m exec i3lock -u -i /home/samo/Pictures/Art/Wallpaper3.png 
+bindsym $mod+m exec i3lock -u -i /home/samo/Pictures/Art/Wallpaper6.png 
+
+#turning off the computer
+bindsym $mod+b exec shutdown now
+
+#picom
+exec picom --experimental-backends
+
+#gaps
+gaps inner 20
+gaps outer 0
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -215,7 +225,10 @@ bar {
 bindsym $mod+d exec dmenu_run
 
 #startup
-exec_always feh --bg-center /home/samo/Pictures/Art/Wallpaper3.png
+exec_always feh --bg-scale /home/samo/Pictures/Art/Wallpaper6.png
+#exec_always feh --bg-scale /home/samo/Pictures/Art/Wallpaper5.png
+#exec_always feh --bg-scale /home/samo/Pictures/Art/Wallpaper4.png
+#exec_always feh --bg-center /home/samo/Pictures/Art/Wallpaper3.png
 #exec_always feh --bg-scale /home/samo/Pictures/Art/Wallpaper2.png
 #exec_always feh --bg-fill /home/samo/Pictures/Art/Wallpaper.jpg
 exec_always setxkbmap -layout sk
