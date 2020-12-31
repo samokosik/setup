@@ -222,7 +222,7 @@ bar {
 
 
 # start rofi/dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run -theme ArkDark_Theme -font "Roboto 12" -opacity "93"
+bindsym $mod+d exec rofi -show run -theme ArkDark_Theme -font "Roboto 12"
 
 #startup
 exec_always feh --bg-scale /home/samo/Pictures/Art/Wallpaper6.png
