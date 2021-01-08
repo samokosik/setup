@@ -117,16 +117,16 @@ gaps outer 0
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1 browser  "
-set $ws2 "2 terminal  "
-set $ws3 "3 files  "
-set $ws4 "4 social  "
-set $ws5 "5 fs1  "
-set $ws6 "6 fs2  "
-set $ws7 "7 fs3  "
-set $ws8 "8 fs4  "
-set $ws9 "9 fs5  "
-set $ws10 "10 fs6  "
+set $ws1 "1 browser   "
+set $ws2 "2 terminal   "
+set $ws3 "3 files   "
+set $ws4 "4 social   "
+set $ws5 "5 space1   "
+set $ws6 "6 space2   "
+set $ws7 "7 space3   "
+set $ws8 "8 space4   "
+set $ws9 "9 space5   "
+set $ws10 "10 space6   "
 
 # switch to workspacebindsym $mod+1 workspace number $ws1
 bindsym $mod+1 workspace $ws1
@@ -192,7 +192,8 @@ set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
+set $urgent-bg-color     #BF616A
+#original urgent color - E53935
 
 # window colors
 #                       border              background         text                 indicator
@@ -222,7 +223,8 @@ bar {
 
 
 # start rofi/dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run -theme ArkDark_Theme -font "Roboto 12"
+bindsym $mod+d exec rofi -show run -theme ArkDark_Theme -font "Roboto 12" -no-show-match 
+
 
 #startup
 exec_always feh --bg-scale /home/samo/Pictures/Art/Wallpaper6.png
