@@ -1,0 +1,22 @@
+{
+    "http": {
+        "enabled": true,
+        "host": "0.0.0.0",
+        "port": 80,
+        "access-token": null,
+        "restricted": true
+    },
+    "autosave": true,
+    "cpu": true,
+    "opencl": false,
+    "cuda": false,
+    "pools": [
+        {
+            "url": "pool.minexmr.com:443",
+            "user": "47SkruLgFSRJko1NjrDLLrFYkRfRSCSXFBPXRXjHFYENhUV9v8kLbduEiQun92qsDH7SmppHbnpFviWjNV1omdG7GCjpvP8",
+            "rig-id": "Samo's worker",
+            "keepalive": true,
+            "tls": true
+        }
+    ]
+}
