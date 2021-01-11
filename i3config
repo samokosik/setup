@@ -121,12 +121,12 @@ set $ws1 "1 browser   "
 set $ws2 "2 terminal   "
 set $ws3 "3 files   "
 set $ws4 "4 social   "
-set $ws5 "5 space1   "
-set $ws6 "6 space2   "
-set $ws7 "7 space3   "
-set $ws8 "8 space4   "
-set $ws9 "9 space5   "
-set $ws10 "10 space6   "
+set $ws5 "5 fs1   "
+set $ws6 "6 fs2   "
+set $ws7 "7 fs3   "
+set $ws8 "8 fs4   "
+set $ws9 "9 fs5   "
+set $ws10 "10 fs6   "
 
 # switch to workspacebindsym $mod+1 workspace number $ws1
 bindsym $mod+1 workspace $ws1
@@ -199,7 +199,7 @@ set $urgent-bg-color     #BF616A
 #                       border              background         text                 indicator
 client.focused          $bg-color           $bg-color          $text-color          #00ff00
 client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color  #00ff00
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color  #00ff00
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color  #00ff00   	
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
 
 
