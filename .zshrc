@@ -10,12 +10,19 @@ fi
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.zsh/.p10k.zsh ]] || source ~/.zsh/.p10k.zsh
 
 
 
-#zsh autosuggestions
+#zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
+
+#autojump
+[[ -s /home/samo/.autojump/etc/profile.d/autojump.sh ]] && source /home/samo/.autojump/etc/profile.d/autojump.sh
+
+autoload -U compinit && compinit -u
 
 
 
@@ -37,7 +44,7 @@ alias zshconfig="nano .zshrc"
 
 
 
-#zsh syntax highlighting
+#zsh-syntax-highlighting
 #KEEP AT THE BOTTOM
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]=none
