@@ -110,6 +110,8 @@ bindsym $mod+b exec shutdown now
 
 #picom
 exec picom --experimental-backends
+bindsym $mod+t exec picom-trans -s 100
+bindsym $mod+p exec picom-trans -r
 
 #gaps
 gaps inner 20
