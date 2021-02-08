@@ -225,7 +225,8 @@ bar {
 
 
 # start rofi/dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run -theme ArkDark_Theme -font "Roboto 12" -no-show-match 
+# bindsym $mod+d exec rofi -show run -theme ArkDark_Theme -font "Roboto 12" -no-show-match 
+bindsym $mod+d exec /home/samo/.config/launchers/text/launcher.sh
 
 
 #startup
