@@ -39,10 +39,9 @@ alias rmrf="rm -rf"
 alias dfh="df -h"
 alias dfH="df -H"
 alias picomconfig="nano /home/samo/.config/picom.conf"
-alias time-sync="sudo ntpd -gq"
 alias zshconfig="nano .zshrc"
-
-
+alias nanana="picom-trans -s 100"
+alias errors="journalctl -p 3 -xb"
 
 #zsh-syntax-highlighting
 #KEEP AT THE BOTTOM
